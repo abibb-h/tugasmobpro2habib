@@ -3,7 +3,7 @@ Finance Mate adalah aplikasi mock-up keuangan pribadi yang dirancang untuk menam
 
 Tampilan UI
 
-<img width="340" height="763" alt="Screenshot 2025-11-10 075018" src="https://github.com/user-attachments/assets/18f8cef7-712d-4f61-9777-abd8557a1ded" />
+<img width="228" height="512" alt="image" src="https://github.com/user-attachments/assets/0ef4bf28-6920-4f90-a682-fbe2bcc20b44" />
 
 
 Proyek ini dibangun menggunakan Flutter dan Dart.
