@@ -1,9 +1,11 @@
-💸 Finance Mate: Aplikasi Keuangan Pribadi (Edisi Elegan)
+💸 ABC Finance: Aplikasi Keuangan Pribadi (Edisi Elegan)
 Finance Mate adalah aplikasi mock-up keuangan pribadi yang dirancang untuk menampilkan antarmuka pengguna (UI) yang Mewah dan Elegan menggunakan tema Dark Mode dengan aksen emas.
 
 Tampilan UI
 
-<img width="228" height="512" alt="image" src="https://github.com/user-attachments/assets/0ef4bf28-6920-4f90-a682-fbe2bcc20b44" />
+<img width="304" height="536" alt="image" src="https://github.com/user-attachments/assets/88a8d4b4-c123-4a47-8fbf-c8c9cb4ac753" />
+<img width="304" height="539" alt="image" src="https://github.com/user-attachments/assets/576541cf-9120-4d18-a400-78561b6c484f" />
+
 
 
 Proyek ini dibangun menggunakan Flutter dan Dart.
