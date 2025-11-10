@@ -1,0 +1,76 @@
+import 'dart:async';
+import 'package:flutter/material.dart';
+import 'home_screen.dart';
+import '../main.dart'; // Impor untuk mengakses warna kAccentGold
+
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _fade;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 2),
+    );
+    _fade = CurvedAnimation(parent: _controller, curve: Curves.easeInOut);
+    _controller.forward();
+
+    Timer(const Duration(seconds: 3), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (_) => const HomeScreen()),
+      );
+    });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      // Gunakan background dari tema
+      backgroundColor: kBackgroundColor,
+      body: Stack(
+        fit: StackFit.expand,
+        children: [
+          
+          Image.asset(
+            'assets/images/gambar.jpg', 
+            fit: BoxFit.cover,
+          ),
+          // Overlay lebih pekat
+          Container(color: Colors.black.withOpacity(0.6)),
+          Center(
+            child: FadeTransition(
+              opacity: _fade,
+              child: const Text(
+                'Finance Mate',
+                style: TextStyle(
+                  // Teks judul berwarna Emas
+                  color: kAccentGold,
+                  fontSize: 36,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
